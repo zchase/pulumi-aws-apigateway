@@ -1,0 +1,21 @@
+{
+    "name": "pulumi-sam-app",
+    "scripts": {
+        "test": "NODE_ENV=test mocha --timeout 10000 --colors --require ts-node/register --reporter spec test/**/*.ts",
+        "autotest": "NODE_ENV=test mocha --timeout 10000 --colors --require ts-node/register --reporter spec --watch --watch-files 'src/**/*.ts, test/**/*.ts' test/**/*.ts",
+        "deploy": ""
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.11",
+        "@types/mocha": "^8.0.0",
+        "@types/node": "^14.0.24",
+        "chai": "^4.2.0",
+        "mocha": "^8.0.1",
+        "ts-node": "^8.10.2"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^2.0.0",
+        "@pulumi/awsx": "^0.20.0",
+        "@pulumi/pulumi": "^2.0.0"
+    }
+}
